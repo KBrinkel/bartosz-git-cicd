@@ -40,8 +40,8 @@ def test_overdraw_checking():
 def test_overdraw_savings():
     account = Account('savings')
     account.deposit(50)
-    account.withdraw(10)
-    assert account.balance == 40
+    account.withdraw(20)
+    assert account.balance == 29
 
 def test_whatever():
     pass
